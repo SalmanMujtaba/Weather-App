@@ -11,7 +11,6 @@ request({
   }
   else if(body.status ==='ZERO_RESULTS'){
     callback('no result foound');
-
   }
   else if(body.status === 'OK'){
     callback(undefined,{
@@ -19,7 +18,6 @@ request({
     Latitude: body.results[0].geometry.location.lat,
     Longitude: body.results[0].geometry.location.lng
   });
-
   }
  });
 };
